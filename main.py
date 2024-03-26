@@ -59,7 +59,7 @@ if content_submit:
         temp_data = pd.DataFrame.from_dict(gas_content_temp)
         
     # Add the current data to the existing dataframe
-        st.session_state.full_data = st.session_state.full_data.append(temp_data,ignore_index=True)
+        st.session_state.full_data = st.session_state.full_data._append(temp_data,ignore_index=True)
 
     # Throw exception if an error is encountered        
     except:
